@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="favicon2.ico" type="image/x-icon">
+	<title>A-Squared Consulting</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <style>
+       /* body styles */
+       body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* hero section styles */
+    #hero {
+        background-image: url('background1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /*Size of logo*/
+    img {
+      height: 200px;
+      
+    }
+    /*Padding above and below top logo*/
+    .logo img {
+      padding-top: 10px;
+      padding-bottom: 0px;
+    }
+    /* Writing in picture */
+    #hero h2 {
+        font-size: 48px;
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /*3px 3px 0px #000000;*/
+        margin: 0;
+    }
+/*Lower text in the image*/ 
+    #hero p {
+      font-size: 21px;
+        color: #000000;
+        text-shadow: -0.4px -0.4px 0 #000000, 0.4px -0.4px 0 #000000, -0.4px 0.4px 0 #000000, 0.4px 0.4px 0 #000000;  /*Shadow right, Shadow below, Blur*/ 
+    }
+    /*Get Started Button in Image*/
+    .hero-btn {
+  background-color: #c19c6e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  margin-left: 40%;
+}
+
+.hero-btn:hover {
+  background-color: #a97d4d;
+}
+/*Area Behind logo at the top*/
+header {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+header p {
+  font-size: 24px;
+  color: #ffffff;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 2);
+  margin: 0;
+}
+/*Navigation Bar*/
+nav {
+        background-color: #444444;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20%; /*Use to change the spacing in the Nav bar*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        nav ul li {
+        margin: 0 10px;
+    }
+
+        nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    nav ul li:last-child {
+    margin-left: 20px;
+    padding: 0px;
+    }
+    /*FIXING BULLETS IN NAV?*/
+    nav li::before {
+  color: #444444;
+    }
+
+nav ul li:last-child img {
+  width: 30px;
+  height: 30px;
+}
+ /* NAVIGATION BAR */
+    nav a:hover {
+  color: #c19c6e;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #c19c6e;
+  color: #fff;
+  font-weight: 700;
+}
+/*Contact Us area*/
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+/* Submit button at the bottom*/
+input[type="submit"] {
+  background-color: #c19c6e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #a97d4d;
+}
+                                        /* FORM */
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;  /*0 auto*/
+}
+
+td {
+  padding: 5px 10px; /*Spacing between each row and width*/
+}
+
+#contact td:first-child {
+  text-align: right;
+  padding-right: 35px;
+  padding-bottom: 25px;
+  width: 20%;
+}
+
+td label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: -30px;
+  margin-top: -10px;
+}
+/*For the form*/ 
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav img {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}
+                                                /* ABOUT US */
+/*About section*/
+#about {
+  background-color: #dadad5;
+  padding: 0px 0; /*was 80*/
+  text-align: center;
+}
+/*About Us Font*/
+#about h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #000000;
+  /*text-shadow:-0.5px -0.5px 0 #000000, 0.5px -0.5px 0 #000000, -0.5px 0.5px 0 #000000, 0.5px 0.5px 0 #000000;/*2px 2px 0px #c19c6e;*/ 
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#about h3 {
+  color: #a97d4d;
+}
+/* Employee Details Style*/
+.employee {
+  display: inline-block;
+  margin: 20px 40px;
+  vertical-align: top;
+  width: 500px;
+}
+
+.employee img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.employee .description {
+  padding: 20px;
+  text-align: center;
+}
+                                            /* OUR SERVICES */
+/* Our Services Styles*/
+#Services {
+  padding: 80px 0;
+  text-align: center;  
+}
+/* Fix bulletpoints*/
+
+/*WORKS*/
+ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li:before {
+			content: "\2022"; /* Add content with the bullet character */
+			color: #f7f7f7; /* Change the color of the bullet */
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em; /* Move the bullet to the left of the list item */
+		}    
+    .btn-secondary {
+    background-color: #c19c6e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #a97d4d;
+}
+
+                                              /* OUR SERVICES PICTURES*/
+/*Our Services take 2*/
+.services {
+  text-align: center;
+}
+
+.service {
+  display: inline-block;  /*inline-block*/
+  margin: 60px 2.5%;           /*20px*/
+  text-align: center;
+  width: 25%;             /*Not here*/
+}
+/*Our Services Picture Settings*/
+.service img {
+  width: 100%;            /*300 px*/
+  height: auto;           /*200px*/
+  object-fit: cover;      /*cover*/
+  display: inline-block;  /*inline-block*/
+  vertical-align: middle;
+}
+
+.service h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;      /*20px*/
+}
+/* Our Services Pictures Description*/
+.service p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;     /*center*/
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+                                             /* CONTACT US */
+/* Contact Us Styles*/
+#contact {
+background-color: #dadad5;
+  padding: 0px 0;
+  margin-bottom: 100px;
+  text-align: center;  
+}
+                                              /* FOOTER */
+/* FOOTER STYLE*/
+footer {
+  background-color: #252525;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  margin: 0;
+  font-size: 14px;
+}
+
+.linkedin-link {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 0px;
+}
+                                                /* END OF STYLE / CSS */
+    </style>
+</head>
+
+<body style="text-align: center;">
+	<header>
+		<div class="logo">
+      <section id="home">
+			<img src="Logo 2.PNG" alt="A-Squared Consulting">
+			<h1></h1>
+    </section>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#home"><b>Home</b></a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+                <li><a href="https://www.linkedin.com/in/adamtbolton/" target="_blank"><img src="LinkedInLogo.png" alt="LinkedIn"></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="hero">
+			<h2> <br>Life Science Consulting. <br><br> Innovating wellness, together.</h2>
+            
+			<p>Helping businesses succeed in the life sciences industry.</p>
+			<a href="#contact" class="hero-btn">Get Started</a>
+		</section>
+        
+        
+
+
+
+		<section id="about">
+            <div class="container">
+              <h2><br>Meet the Team:<br></h2>
+              <div class="employee">
+                <img src="1517675723537BW.jpeg" alt="Dr. Ann Connolly">
+                <div class="description">
+                  <h3>Dr. Ann Connolly</h3>
+                  <p>Co-Founder & Senior Consultant</p>
+                  <p>With over 20 years of experience in senior leadership roles at Johnson & Johnson, UCB, and GSK, and a PhD in Biochemistry, Ann is a highly accomplished executive with a strong track record of success in driving innovation and business development within the life sciences industry. Throughout Ann's career, they have been responsible for supporting and investing in early-stage innovations, managing global business development transactions, and overseeing preclinical development activities. With a passion for finding the best science and technology to solve unmet medical needs, Ann is committed to nurturing the global innovation ecosystem to ensure its continued vibrancy.</p>
+                </div>
+              </div>
+              <div class="employee">
+                <img src="1678228465857BW.jpeg" alt="Adam Bolton">
+                <div class="description">
+                  <h3>Adam Bolton</h3>
+                  <p>Co-founder & Consultant</p>
+                  <p>As a former strategy consultant, Adam has a proven track record of delivering results for clients. He developed a go-to-market strategy for an early-stage biotech, by analysing customer needs and preferences, market segments, and competitive landscape to identify key drivers of adoption and growth. During his pursuit of an MSc in Economics and Finance at King's College London, he managed a student-led investment portfolio. Adam also holds a BSc in Biomedical Science from the University of Reading, which provided him with a solid foundation in cellular, molecular, and biochemical sciences, with a particular emphasis on the study of human anatomy and physiology, diseases, and their mechanisms.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+		<section id="services">
+			<div class="container">
+				<h2>Our Services</h2>
+				<p>We offer a wide range of consulting services to help businesses in the life sciences industry succeed. Our services include:</p>
+                
+                <ul>
+					<li>Market analysis and research</li>
+					<li>Regulatory compliance</li>
+					<li>Product development and commercialization</li>
+					<li>Supply chain management</li>
+					<li>And much more</li>
+				</ul>
+                
+				<a href="#contact" class="btn-secondary">Learn More</a>
+			</div>
+		</section>
+                    
+
+
+    <div class="services">
+      <div class="service">
+        <img src="Analysis1.jpg" alt="Market Analysis & Research">
+        <h3>Market Analysis & Research</h3>
+        <p>Market analysis and research services provide you with in-depth insights into consumer behavior, market trends, and competition, enabling you to make informed business decisions and stay ahead of the curve.</p>
+      </div>
+      <div class="service">
+        <img src="hands-3348987__340.jpg" alt="Partnership Opportunities">
+        <h3>Partnership Opportunities</h3>
+        <p>Partnership opportunities can bring valuable resources and expertise to your company, leading to enhanced innovation, expanded market reach, and increased profitability.</p>
+      </div>
+      <div class="service">
+        <img src="Dev.jpg" alt="Development & Commercialisation">
+        <h3>Development & Commercialisation</h3>
+        <p>Comprehensive development and commercialization services, helping you take your product from ideation to market launch.</p>
+      </div>
+    </div>
+    
+    
+
+    
+
+
+
+		<section id="contact">
+            <div class="container">
+              <h2><br>Contact Us</h2>
+              <form action="#" method="POST">
+                <table>
+                  <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="message">Message</label></td>
+                    <td><textarea id="message" name="message" rows="6" cols="50" required></textarea></td>
+                  </tr>
+                </table>
+                <input type="submit" value="Send Message" class="btn-primary">
+              </form>
+            </div>
+          </section>
+          
+    </main>
+    <footer>
+        <div class="footer-container">
+          <div class="logo-container">
+            <img src="Logo 3.PNG" alt="Company Logo" class="logo-img">
+          </div>
+          <div class="contact-container">
+            <p class="email">enquiries@a2consulting.uk</p>
+            <a href="https://www.linkedin.com" target="_blank" class="linkedin-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+</body>
